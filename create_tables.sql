@@ -3,7 +3,7 @@ CREATE TABLE champ (
     champion_id INT NOT NULL,
     PRIMARY KEY (champion_id)
 );
-load data local infile './champ.csv'
+load data local infile './champs.csv'
 into table champ
 fields terminated by ','
 enclosed by '"'
