@@ -1,2 +1,2 @@
-select count(distinct substring(version,1,3)) as cnt
+select count(distinct substring_index(version,'.',2)) as cnt
 from match_info;
