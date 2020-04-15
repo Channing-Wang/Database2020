@@ -7,7 +7,7 @@ load data local infile './champs.csv'
 into table champ
 fields terminated by ','
 enclosed by '"'
-lines terminated by '\n'
+lines terminated by '\r\n'
 ignore 1 lines;
 
 CREATE TABLE match_info (
@@ -20,7 +20,7 @@ load data local infile './matches.csv'
 into table match_info
 fields terminated by ','
 enclosed by '"'
-lines terminated by '\n'
+lines terminated by '\r\n'
 ignore 1 lines;
 
 CREATE TABLE participant (
@@ -39,7 +39,7 @@ load data local infile './participants.csv'
 into table participant
 fields terminated by ','
 enclosed by '"'
-lines terminated by '\n'
+lines terminated by '\r\n'
 ignore 1 lines;
 
 CREATE TABLE teamban (
@@ -53,7 +53,7 @@ load data local infile './teambans.csv'
 into table teamban
 fields terminated by ','
 enclosed by '"'
-lines terminated by '\n'
+lines terminated by '\r\n'
 ignore 1 lines;
 
 CREATE TABLE stat (
@@ -82,5 +82,5 @@ load data local infile './stats.csv'
 into table stat
 fields terminated by ','
 enclosed by '"'
-lines terminated by '\n'
+lines terminated by '\r\n'
 ignore 1 lines;
